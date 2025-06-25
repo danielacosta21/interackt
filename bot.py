@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -30,4 +31,4 @@ async def on_member_update(before: discord.Member, after: discord.Member):
             break  # Only need to process once
 
 # Run your bot with your token
-bot.run("DISCORD_TOKEN")
+bot.run(os.getenv("DISCORD_TOKEN"))
