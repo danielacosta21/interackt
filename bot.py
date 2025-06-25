@@ -31,4 +31,4 @@ async def on_member_update(before: discord.Member, after: discord.Member):
             break  # Only need to process once
 
 # Run your bot with your token
-bot.run(os.getenv("DISCORD_TOKEN"))
+bot.run(os.getenv("MTM4NzQ0MTg0NzA1MTIyMzA5MA.Gvi9sq.Ss50PwWH395GwYPJhpQt4AmOW5HC2UIQ83CezY"))
