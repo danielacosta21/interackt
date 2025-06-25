@@ -30,4 +30,4 @@ async def on_member_update(before: discord.Member, after: discord.Member):
             break  # Only need to process once
 
 # Run your bot with your token
-bot.run("YOUR_BOT_TOKEN")
+bot.run("DISCORD_TOKEN")
