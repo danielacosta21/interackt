@@ -14,6 +14,7 @@ OLD_ROLE = "Wanderer"
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Game(name="Playing with Iskolotl🌻"))
     print(f"Logged in as {bot.user}")
 
 @bot.event
@@ -26,10 +27,5 @@ async def on_member_update(before: discord.Member, after: discord.Member):
                 await after.remove_roles(old_role)
                 print(f"Removed {OLD_ROLE} from {after.display_name} due to gaining {role.name}")
             break
-
-@bot.event
-async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="Playing with Iskolotl🌻"))
-    print(f"Logged in as {bot.user}")
 
 bot.run(os.getenv("DISCORD_TOKEN"))
